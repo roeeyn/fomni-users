@@ -16,6 +16,15 @@ mix ecto.gen.repo -r FomniUsers.Repo
 
 # Generate the schema into the actual DB
 mix ecto.create
+
+# Create a migration
+mix ecto.gen.migration create_users
+
+# Execute the migration
+mix ecto.migrate
+
+# OPTIONAL: rollback the migration if something went wrong
+mix ecto.rollback
 ```
 
 ## Installation
