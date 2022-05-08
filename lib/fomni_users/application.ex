@@ -10,6 +10,7 @@ defmodule FomniUsers.Application do
     children = [
       # Starts a worker by calling: FomniUsers.Worker.start_link(arg)
       # {FomniUsers.Worker, arg}
+      FomniUsers.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

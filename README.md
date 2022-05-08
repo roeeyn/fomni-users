@@ -2,6 +2,22 @@
 
 **TODO: Add description**
 
+## Running local DB
+
+```bash
+docker run -p 5454:5432 -e POSTGRES_PASSWORD=postgres_password -e POSTGRES_USER=postgres_user postgres:14.2
+```
+
+## Executed Ecto commands
+
+```bash
+# Generate boilerplate for repository
+mix ecto.gen.repo -r FomniUsers.Repo
+
+# Generate the schema into the actual DB
+mix ecto.create
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
